@@ -1,6 +1,6 @@
 # EchoKame
 
-An [EchoEar](https://oshwhub.com/esp-college/echoear) (ESP-VoCat) mounted on top of a [Kame32](https://github.com/JavierIH/kame32) quadruped robot. The robot moves according to the emotion shown on the screen, and wakes up or shuts down when the EchoEar is attached or removed.
+An [EchoEar](https://oshwhub.com/esp-college/echoear) (ESP-VoCat) mounted on top of a [Kame32](https://github.com/JavierIH/kame32) quadruped robot. While the EchoEar is attached, the robot moves according to the emotion shown on the screen. Without it, the robot works as usual with its web gamepad.
 
 More details and 3D parts: https://javierih.com/robots/echoearxkame32/
 
@@ -32,4 +32,4 @@ The robot uses `H` as a heartbeat to know if the EchoEar is attached.
 python scripts/build.py echokame
 ```
 
-The robot side is the `echoear` app of the Kame32 firmware.
+The robot side is the `gamepad` app of the Kame32 firmware. Gamepad commands have priority over emotions.
